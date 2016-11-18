@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 const parse = require('csv-parse');
 
 const fs = require('fs');
