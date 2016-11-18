@@ -8,8 +8,8 @@ const parser = parse({delimiter: ',', columns: true}, function (err, data) {
     if (err) {
       return console.log(err);
     }
-    console.log('finished');
 
+    console.log('finished');
   });
 });
 
