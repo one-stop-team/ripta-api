@@ -2,6 +2,7 @@
 const parse = require('csv-parse');
 
 const fs = require('fs');
+const path = require('path');
 
 const parser = parse({delimiter: ',', columns: true}, function (err, data) {
   if (err) {
@@ -17,4 +18,4 @@ const parser = parse({delimiter: ',', columns: true}, function (err, data) {
   });
 });
 
-fs.createReadStream(__dirname+'/static/google_transit/trips.txt').pipe(parser);
+fs.createReadStream(path.join(__dirname, '/static/google_transit/trips.txt')).pipe(parser);
