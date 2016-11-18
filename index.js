@@ -46,7 +46,7 @@ app.get('/api/:type/route/:route/:dir?', (req, res) => {
     fetchBaseApi(type, (data) => {
       data = filterByRoutes(data, type, req.params.route);
       if (req.params.dir) {
-          data = filterByDirection(data, type, req.params.dir);
+        data = filterByDirection(data, type, req.params.dir);
       }
       res.json(data);
     });
