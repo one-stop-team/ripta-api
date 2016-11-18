@@ -23,7 +23,7 @@ const fetchBaseApi = (type, callback) => {
       callback(JSON.parse(data));
     }
   });
-}
+};
 
 const app = express();
 app.use(cors());
@@ -75,7 +75,7 @@ const startServer = () => {
   app.listen(port, () => {
     console.log(`App listening on port ${port}`);
   });
-}
+};
 
 startServer();
 
