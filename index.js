@@ -35,8 +35,7 @@ app.get('/api/:type', (req, res) => {
     fetchBaseApi(type, (data) => {
       res.json(data);
     });
-  }
-  else {
+  } else {
     res.send('Error: Not a valid api call');
   }
 });
@@ -51,8 +50,7 @@ app.get('/api/:type/route/:route/:dir?', (req, res) => {
       }
       res.json(data);
     });
-  }
-  else {
+  } else {
     res.send('Error: Not a valid api call');
   }
 });
